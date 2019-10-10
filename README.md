@@ -43,6 +43,8 @@ tiller 接收来自helm客户端的请求，并把相关资源的操作发送到
 - 向Kubernetes集群安装Charts并对相应的Release进行跟踪；
 - 升级和卸载Charts；
 
+![图片.png](https://ask.qcloudimg.com/draft/6211241/uds3b7ewyf.png)
+
 ## 2. 为什么需要Helm
 &emsp;&emsp;Kubernetes虽然提供了多种容器编排对象，例如Deployment、StatefulSet、DeamonSet、Job等，还有多种基础资源封装例如ConfigMap、Secret、Serivce等，但是一个应用往往有多个服务，有的可能还要依赖持久化存储，当这些服务之间直接互相依赖，需要有一定的组合的情况下，使用YAML文件的方式配置应用往往十分繁琐还容易出错，这时候就需要服务编排工具。
 &emsp;&emsp;服务编排管理工具就是构建在kubernetes的基础object之上，统筹各个服务之间的关系和依赖的。目前常用到的工具是Helm。
